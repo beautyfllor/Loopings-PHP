@@ -1,6 +1,7 @@
 <?php
     $valor = (int) 0;
     $cont = (int) 0;
+    //$resultado = (string) null;
 
     if(isset($_POST['btnCalc'])) {
         $valor = $_POST['txtNumero'];
@@ -11,6 +12,11 @@
             // $cont+=1;
             $cont++;
         }
+
+        for($cont = 0; $cont <= $valor; $cont++)
+            echo($cont. '<br>');
+            //$resultado = $resultado . $cont.'<br>';
+            //Forma concatenada -> $resultado.= $cont.'<br>';
     }
 ?>
 
